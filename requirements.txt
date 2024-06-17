@@ -3,4 +3,6 @@ gymnasium[atari]
 gymnasium[accept-rom-license]
 jupyter==1.0.0
 matplotlib==3.9.0
+moviepy==1.0.3
 numpy==1.26.4
+opencv-python==4.10.0.82
