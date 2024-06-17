@@ -1,0 +1,6 @@
+gymnasium==0.29.1
+gymnasium[atari]
+gymnasium[accept-rom-license]
+jupyter==1.0.0
+matplotlib==3.9.0
+numpy==1.26.4
