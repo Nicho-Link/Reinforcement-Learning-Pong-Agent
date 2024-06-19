@@ -1,18 +1,19 @@
 # Reinforcement-Learning-Pong-Agent
 
 ## What is this?
-This is a Reinforcement Learning Agent for the [gymnasium Pong Environment](https://gymnasium.farama.org/environments/atari/pong/) using a DDQN (Double Deep Q-Network) and a decaying epsilon-greedy strategy.
+This is a Reinforcement Learning Agent for the [Gymnasium Pong Environment](https://gymnasium.farama.org/environments/atari/pong/) using a DDQN (Double Deep Q-Network) and a decaying epsilon-greedy strategy.
 
 This is a project for a Lecture at DHBW Mannheim. The goal is to develop an own Reinforcement Learning Agent.
 
 ## Directory Structure
 - [models](models): contains the checkpoints of the different training sessions and the final model
-  - [final_model.pth](models/final_model.pth): The final model
+  - [final_model_v1.pth](models/final_model_v1.pth): The final model of session 1
+  - [final_model_v2.pth](models/final_model_v2.pth): The final model of session 2
 - [res](res): contains ressources of the training sessions
   - [training_v1](res/training_v1): contains all ressources of session 1
     - [plots](res/training_v1/plots): contains the different plots generated in the training session
     - [videos](res/training_v1/videos): contains selected videos of some episodes of the training
-  - [training_v2](res/training_v2): contains all ressources of session 1
+  - [training_v2](res/training_v2): contains all ressources of session 2
     - [plots](res/training_v2/plots): contains the different plots generated in the training session
     - [videos](res/training_v2/videos): contains selected videos of some episodes of the training
 - [src](src): containts all of the code
