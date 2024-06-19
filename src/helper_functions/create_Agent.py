@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import os
 
 # Import own Functions
-from src.helper_functions.create_NN import PongAgentNN
+from src.helper_functions.create_NN import DDQN
 from src.helper_functions.create_ExpRepBuf import ExperienceReplayBuffer
 
 
@@ -77,7 +77,7 @@ class EpsilonGreedyAgent:
 
         self.current_step = 0
 
-        self.model = PongAgentNN(self.state_shape, self.num_actions).float()
+        self.model = DDQN(self.state_shape, self.num_actions).float()
         self.model.to(device=self.device)
 
         self.memory = ExperienceReplayBuffer(self.buffer_size)

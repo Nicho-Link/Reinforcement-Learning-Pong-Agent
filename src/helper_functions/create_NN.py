@@ -3,7 +3,7 @@ import copy
 import numpy as np
 
 
-class PongAgentNN(nn.Module):
+class DDQN(nn.Module):
     def __init__(self, state_shape: tuple, num_actions: int):
         """Initializes the DQN model
 
