@@ -9,7 +9,10 @@ This is a project for a Lecture at DHBW Mannheim. The goal is to develop an own 
 - [models](models): contains the checkpoints of the different training sessions and the final model
   - [final_model_v1.pth](models/final_model_v1.pth): The final model of session 1
   - [final_model_v2.pth](models/final_model_v2.pth): The final model of session 2
-- [res](res): contains ressources of the training sessions
+- [res](res): contains ressources of all sessions
+  - [eval](res/eval): contains all ressources of the evaluation
+    - [plots](res/eval/plots): contains the plot generated in the eval
+    - [videos](res/eval/videos): contains all videos of the eval
   - [training_v1](res/training_v1): contains all ressources of session 1
     - [plots](res/training_v1/plots): contains the different plots generated in the training session
     - [videos](res/training_v1/videos): contains selected videos of some episodes of the training
@@ -18,10 +21,10 @@ This is a project for a Lecture at DHBW Mannheim. The goal is to develop an own 
     - [videos](res/training_v2/videos): contains selected videos of some episodes of the training
 - [src](src): containts all of the code
   - [helper_functions](src/helper_functions): contains all files that create some classes to build & train the RL-Agent
-    - [create_Agent.py](src/helper_functions/create_Agent.py) class to create the mario-agent
-    - [create_ExpRepBuf.py](src/helper_functions/create_ExpRepBuf.py) class to create a custom experience replay buffer
-    - [create_NN.py](src/helper_functions/create_NN.py) class to create the DDQN-Neural-Network
-    - [create_Plot](src/helper_functions/create_Plot.py) function to plot all necessary data
+    - [create_Agent.py](src/helper_functions/create_Agent.py): class to create the mario-agent
+    - [create_ExpRepBuf.py](src/helper_functions/create_ExpRepBuf.py): class to create a custom experience replay buffer
+    - [create_NN.py](src/helper_functions/create_NN.py): class to create the DDQN-Neural-Network
+    - [create_Plot](src/helper_functions/create_Plot.py): function to plot all necessary data
   - [train_v1.ipynb](src/train_v1.ipynb): notebook-script to train the agent with the hyperparameters of v1
   - [train_v2.ipynb](src/train_v2.ipynb): notebook-script to train the agent with the hyperparameters of v2
 - [main.ipynb](main.ipynb): notebook-script to let the final model play the game
