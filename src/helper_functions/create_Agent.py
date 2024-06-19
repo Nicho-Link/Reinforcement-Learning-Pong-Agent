@@ -1,3 +1,5 @@
+# Bugs fixed with the help of Pytorch Tutorial: https://pytorch.org/tutorials/intermediate/mario_rl_tutorial.html
+
 import torch
 import numpy as np
 import torch.nn.functional as F
